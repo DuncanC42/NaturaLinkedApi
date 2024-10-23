@@ -42,7 +42,7 @@ public class ImageService implements IImageService{
 
                 // Construire l'URL après avoir obtenu l'ID
                 String buildDownloadPath = "/images/image/download/";
-                String downloadUrl = buildDownloadPath + savedImage.getId();
+                String downloadUrl = buildDownloadPath + savedImage.getImageId();
                 savedImage.setDownloadUrl(downloadUrl);
 
                 // Sauvegarder à nouveau l'image avec l'URL
